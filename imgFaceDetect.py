@@ -39,8 +39,6 @@ face_cascade = cv2.CascadeClassifier(script_path+classifier_file)
 mode = 0
 while mode < 1 or mode > 2 or type(mode)!=int:
     mode = int(input(f"Choose Mode (Enter Number): \n  1. Live Video Capture \n  2. Image Detection \n"))
-    print(mode)
-    print(type(mode))
     if mode < 1 or mode > 2 or type(mode)!=int:
         print('Enter The Listed Integer Value To Select Mode')
 if mode == 1:
